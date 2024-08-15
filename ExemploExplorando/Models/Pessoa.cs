@@ -19,6 +19,14 @@ namespace ExemploExplorando.Models
             Sobrenome = sobrenome;
         }
 
+        //out siginifca um parametor de saida
+        public void Deconstruct(out string nome, out string sobrenome)
+        {
+
+            nome = Nome;
+            sobrenome = Sobrenome;
+        }
+
         //Propiedades da classe Pessoa
         //set serve para inserir valores na propiedade da classe
         //get serve para utilizar os valores da propiedade

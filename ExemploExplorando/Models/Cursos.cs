@@ -35,10 +35,12 @@ namespace ExemploExplorando.Models
 
         public void ListarAlunos()
         {
+            //Aqui temos uma interpolação de string, o primeiro sinal é ter o $ antes da string e temos a junção da string com uma propiedade
             Console.WriteLine($"Alunos do curso de: {Nome}");
-            foreach(Pessoa aluno in Alunos)
+            for (int count = 0; count < Alunos.Count; count++)
             {
-                Console.WriteLine($"{aluno.NomeCompleto}");
+                string texto = $"N° - {count + 1} {Alunos[count].NomeCompleto}";
+                Console.WriteLine($"{texto}");
             }
         }
     }

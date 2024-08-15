@@ -1,0 +1,6 @@
+linha 1 do arquivo de leitura
+linha 2 do arquivo de leitura
+linha 3 do arquivo de leitura
+linha 4 do arquivo de leitura
+linha 5 do arquivo de leitura
+linha 6 do arquivo de leitura
