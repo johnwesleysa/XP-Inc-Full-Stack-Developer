@@ -1,15 +1,107 @@
 ﻿using ExemploExplorando.Models;
 using System.Data;
 using System.Globalization;
-
-//if Ternário
-int a = 21;
-bool ehPar = false;
+using Newtonsoft.Json;
 
 
-//if ternário é muito loko boy
-ehPar = a % 2 == 0;
-Console.WriteLine($"O número {a} é " + (ehPar ? "par" : "ímpar"));
+
+//desserialização
+// ler o arquivo json e passa para string
+string conteudoArquivo = File.ReadAllText("Arquivos/vendas.json");
+
+
+// cria e usando a lib newtonsoft, desserializa os dados em json para objeto
+List<Venda> listaVenda = JsonConvert.DeserializeObject<List<Venda>>(conteudoArquivo);
+
+foreach(Venda venda in listaVenda)
+{
+    Console.WriteLine($"ID: {venda.Id}, Nome: {venda.Produto} ,Preço: {venda.Preco}, Data de Venda: {venda.DataVenda}");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//estudar serialização.
+
+// DateTime dataAtual = DateTime.Now;
+
+// List<Venda> listaVendas = new List<Venda>();
+
+// Venda v1 = new Venda(id: 123456, produto: "Sapato", preco: 10M, dataVenda: dataAtual);
+// Venda v2 = new Venda(id: 159487, produto: "Sutiã", preco: 54.4M, dataVenda: dataAtual);
+
+// listaVendas.Add(v1);
+// listaVendas.Add(v2);
+ 
+// string serializado = JsonConvert.SerializeObject(listaVendas, Formatting.Indented);
+
+// //criando e escrevendo dentro do arquivo
+// File.WriteAllText("Arquivos/vendas.json", serializado);
+
+
+// Console.WriteLine(serializado);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// //if Ternário
+// int a = 21;
+// bool ehPar = false;
+
+
+// //if ternário é muito loko boy
+// ehPar = a % 2 == 0;
+// Console.WriteLine($"O número {a} é " + (ehPar ? "par" : "ímpar"));
 
 
 

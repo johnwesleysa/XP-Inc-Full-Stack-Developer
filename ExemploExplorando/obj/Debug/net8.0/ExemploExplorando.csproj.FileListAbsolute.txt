@@ -13,3 +13,21 @@ C:\Users\john.alencar\Documents\GitHub\XP-Inc-Full-Stack-Developer\ExemploExplor
 C:\Users\john.alencar\Documents\GitHub\XP-Inc-Full-Stack-Developer\ExemploExplorando\obj\Debug\net8.0\ExemploExplorando.pdb
 C:\Users\john.alencar\Documents\GitHub\XP-Inc-Full-Stack-Developer\ExemploExplorando\obj\Debug\net8.0\ExemploExplorando.genruntimeconfig.cache
 C:\Users\john.alencar\Documents\GitHub\XP-Inc-Full-Stack-Developer\ExemploExplorando\obj\Debug\net8.0\ref\ExemploExplorando.dll
+C:\Users\John Wesley\Documents\GitHub\XP-Inc-Full-Stack-Developer\ExemploExplorando\bin\Debug\net8.0\ExemploExplorando.exe
+C:\Users\John Wesley\Documents\GitHub\XP-Inc-Full-Stack-Developer\ExemploExplorando\bin\Debug\net8.0\ExemploExplorando.deps.json
+C:\Users\John Wesley\Documents\GitHub\XP-Inc-Full-Stack-Developer\ExemploExplorando\bin\Debug\net8.0\ExemploExplorando.runtimeconfig.json
+C:\Users\John Wesley\Documents\GitHub\XP-Inc-Full-Stack-Developer\ExemploExplorando\bin\Debug\net8.0\ExemploExplorando.dll
+C:\Users\John Wesley\Documents\GitHub\XP-Inc-Full-Stack-Developer\ExemploExplorando\bin\Debug\net8.0\ExemploExplorando.pdb
+C:\Users\John Wesley\Documents\GitHub\XP-Inc-Full-Stack-Developer\ExemploExplorando\obj\Debug\net8.0\ExemploExplorando.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\John Wesley\Documents\GitHub\XP-Inc-Full-Stack-Developer\ExemploExplorando\obj\Debug\net8.0\ExemploExplorando.AssemblyInfoInputs.cache
+C:\Users\John Wesley\Documents\GitHub\XP-Inc-Full-Stack-Developer\ExemploExplorando\obj\Debug\net8.0\ExemploExplorando.AssemblyInfo.cs
+C:\Users\John Wesley\Documents\GitHub\XP-Inc-Full-Stack-Developer\ExemploExplorando\obj\Debug\net8.0\ExemploExplorando.csproj.CoreCompileInputs.cache
+C:\Users\John Wesley\Documents\GitHub\XP-Inc-Full-Stack-Developer\ExemploExplorando\obj\Debug\net8.0\ExemploExplorando.sourcelink.json
+C:\Users\John Wesley\Documents\GitHub\XP-Inc-Full-Stack-Developer\ExemploExplorando\obj\Debug\net8.0\ExemploExplorando.dll
+C:\Users\John Wesley\Documents\GitHub\XP-Inc-Full-Stack-Developer\ExemploExplorando\obj\Debug\net8.0\refint\ExemploExplorando.dll
+C:\Users\John Wesley\Documents\GitHub\XP-Inc-Full-Stack-Developer\ExemploExplorando\obj\Debug\net8.0\ExemploExplorando.pdb
+C:\Users\John Wesley\Documents\GitHub\XP-Inc-Full-Stack-Developer\ExemploExplorando\obj\Debug\net8.0\ExemploExplorando.genruntimeconfig.cache
+C:\Users\John Wesley\Documents\GitHub\XP-Inc-Full-Stack-Developer\ExemploExplorando\obj\Debug\net8.0\ref\ExemploExplorando.dll
+C:\Users\John Wesley\Documents\GitHub\XP-Inc-Full-Stack-Developer\ExemploExplorando\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\John Wesley\Documents\GitHub\XP-Inc-Full-Stack-Developer\ExemploExplorando\obj\Debug\net8.0\ExemploExplorando.csproj.AssemblyReference.cache
+C:\Users\John Wesley\Documents\GitHub\XP-Inc-Full-Stack-Developer\ExemploExplorando\obj\Debug\net8.0\ExemploE.B7F01285.Up2Date

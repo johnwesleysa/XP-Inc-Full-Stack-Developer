@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\john.alencar\\Documents\\GitHub\\XP-Inc-Full-Stack-Developer\\ExemploExplorando\\ExemploExplorando.csproj": {}
+    "C:\\Users\\John Wesley\\Documents\\GitHub\\XP-Inc-Full-Stack-Developer\\ExemploExplorando\\ExemploExplorando.csproj": {}
   },
   "projects": {
-    "C:\\Users\\john.alencar\\Documents\\GitHub\\XP-Inc-Full-Stack-Developer\\ExemploExplorando\\ExemploExplorando.csproj": {
+    "C:\\Users\\John Wesley\\Documents\\GitHub\\XP-Inc-Full-Stack-Developer\\ExemploExplorando\\ExemploExplorando.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\john.alencar\\Documents\\GitHub\\XP-Inc-Full-Stack-Developer\\ExemploExplorando\\ExemploExplorando.csproj",
+        "projectUniqueName": "C:\\Users\\John Wesley\\Documents\\GitHub\\XP-Inc-Full-Stack-Developer\\ExemploExplorando\\ExemploExplorando.csproj",
         "projectName": "ExemploExplorando",
-        "projectPath": "C:\\Users\\john.alencar\\Documents\\GitHub\\XP-Inc-Full-Stack-Developer\\ExemploExplorando\\ExemploExplorando.csproj",
-        "packagesPath": "C:\\Users\\john.alencar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\john.alencar\\Documents\\GitHub\\XP-Inc-Full-Stack-Developer\\ExemploExplorando\\obj\\",
+        "projectPath": "C:\\Users\\John Wesley\\Documents\\GitHub\\XP-Inc-Full-Stack-Developer\\ExemploExplorando\\ExemploExplorando.csproj",
+        "packagesPath": "C:\\Users\\John Wesley\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\John Wesley\\Documents\\GitHub\\XP-Inc-Full-Stack-Developer\\ExemploExplorando\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\john.alencar\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\John Wesley\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -42,6 +42,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -58,7 +64,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
