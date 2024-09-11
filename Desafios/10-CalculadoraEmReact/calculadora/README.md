@@ -17,6 +17,11 @@ Este é um aplicativo de calculadora simples desenvolvido durante o bootcamp Ful
 - Função de potenciação (em desenvolvimento).
 - Interface de usuário intuitiva e responsiva.
 
+## Imagem da aplicação
+
+Aqui está uma captura de tela da calculadora em execução:
+<img src="![URL_da_Imagem](https://s3.amazonaws.com/i.snag.gy/v6QAOd.jpg)" alt="Calculadora">
+
 ## Instruções de Uso
 
 1. Clone o repositório para o seu ambiente local:
