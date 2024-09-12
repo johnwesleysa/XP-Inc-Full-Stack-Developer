@@ -1,124 +1,116 @@
 import Input from './Components/Input'
 import Button from './Components/Button'
 
-import { Container,Content, Row, ContentKeyboard } from "./styles";
+import { Container, Content, Row, ContentKeyboard } from "./styles";
 import { useState } from 'react';
 
 
 const App = () => {
-  const  [currentNumber, setCurrentNumber] = useState('0')
+  const [currentNumber, setCurrentNumber] = useState('0')
   const [firstNumber, setFirstNumber] = useState('0')
   const [operation, setOperation] = useState('')
-
+  const [expression, setExpression] = useState('') // Novo estado para a expressão
 
   const handleOnClear = () => {
     setCurrentNumber('0')
     setFirstNumber('0')  
-    setOperation('')  
+    setOperation('')
+    setExpression('') // Limpar a expressão também
   }
 
   const handleAddNumber = (number) => {
-    setCurrentNumber(prev => `${prev === '0' ? '' : prev}${number}`)
+    if (currentNumber === '0') {
+      setCurrentNumber(number);
+    } else {
+      setCurrentNumber(prev => `${prev}${number}`);
+    }
+    setExpression(prev => `${prev}${number}`); // Atualiza a expressão
   }
 
   const handleSubtraction = () => {
     if (firstNumber === '0') {
-      setFirstNumber (String(currentNumber));
-      setCurrentNumber('0')
-      setOperation('-')
-    } else {
-      const sum = Number(firstNumber) - Number(currentNumber)
-      setCurrentNumber(String(sum))
-      setOperation('')
+      setFirstNumber(String(currentNumber));
+      setCurrentNumber('0');
+      setOperation('-');
     }
+    setExpression(prev => `${prev}-`); // Atualiza a expressão com o operador
   }
 
   const handleSumNumbers = () => {
-    
     if (firstNumber === '0') {
-      setFirstNumber (String(currentNumber));
-      setCurrentNumber('0')
-      setOperation('+')
-      handleAddNumber('+')
-    } else {
-      const sum = Number(firstNumber) + Number(currentNumber)
-      setCurrentNumber(String(sum))
-      setOperation('')
+      setFirstNumber(String(currentNumber));
+      setCurrentNumber('0');
+      setOperation('+');
     }
+    setExpression(prev => `${prev}+`); // Atualiza a expressão com o operador
   }
 
   const handleMultiplication = () => {
-    if (firstNumber === '0'){
-      setFirstNumber(String(currentNumber))
-      setCurrentNumber('0')
-      setOperation('*')
-    }else{
-      const multiplication = Number(firstNumber) * Number(currentNumber)
-      setCurrentNumber(String(multiplication))
-      setOperation('')
+    if (firstNumber === '0') {
+      setFirstNumber(String(currentNumber));
+      setCurrentNumber('0');
+      setOperation('*');
     }
+    setExpression(prev => `${prev}*`); // Atualiza a expressão com o operador
   }
 
   const handleDivision = () => {
-    if (firstNumber === '0'){
-      setFirstNumber(String(currentNumber))
-      setCurrentNumber('0')
-      setOperation('/')
-    }else{
-      const division = Number(firstNumber) / Number(currentNumber)
-      setCurrentNumber(String(division))
-      setOperation('')
+    if (firstNumber === '0') {
+      setFirstNumber(String(currentNumber));
+      setCurrentNumber('0');
+      setOperation('/');
     }
+    setExpression(prev => `${prev}/`); // Atualiza a expressão com o operador
   }
 
   const handlePercentage = () => {
-    if (firstNumber === '0'){
-      setFirstNumber(String(currentNumber))
-      setCurrentNumber('0')
-      setOperation('%')
-    }else{
-      const percentage = (Number(firstNumber) * Number(currentNumber))/100
-      setCurrentNumber(String(percentage))
-      setOperation('')
+    if (firstNumber === '0') {
+      setFirstNumber(String(currentNumber));
+      setCurrentNumber('0');
+      setOperation('%');
     }
+    setExpression(prev => `${prev}%`); // Atualiza a expressão com o operador
   }
 
   const handleEquals = () => {
     if (firstNumber !== '0' && operation !== '' && currentNumber !== '0') {
-      switch(operation){
+      let result;
+      switch (operation) {
         case '+':
-          handleSumNumbers()
+          result = Number(firstNumber) + Number(currentNumber);
           break;
-          case '-':
-            handleSubtraction()
-            break;
-          case '*':
-            handleMultiplication()
-            break;
-          case '/':
-            handleDivision()
-            break;
-          case '%':
-            handlePercentage()
-            break;
-
+        case '-':
+          result = Number(firstNumber) - Number(currentNumber);
+          break;
+        case '*':
+          result = Number(firstNumber) * Number(currentNumber);
+          break;
+        case '/':
+          result = Number(firstNumber) / Number(currentNumber);
+          break;
+        case '%':
+          result = (Number(firstNumber) * Number(currentNumber)) / 100;
+          break;
         default:
-          break;
+          return;
       }
-    } 
+      setCurrentNumber(String(result));
+      setExpression(`${expression}=${result}`); // Mostra o resultado na expressão
+      setFirstNumber('0');
+      setOperation('');
+    }
   }
-
 
   return (
     <Container>
       <Content>
-        <Input value={currentNumber}/>
+        <Input value={expression || currentNumber}/> {/* Mostra a expressão completa */}
         <ContentKeyboard>
           <Row>
             <Button label="AC" onClick={handleOnClear}/>
             <Button label="/" onClick={handleDivision}/>
             <Button label="%" onClick={handlePercentage}/>
-            {/*TODO FAZER A FUNCTION PARA POTENCIAÇÃO*/}
+            {/*TODO FAZER A POTENCIAÇÃO*/}
             <Button label="^"/>
           </Row>
 
@@ -146,10 +138,9 @@ const App = () => {
           <Row>
             <Button label="." onClick={() => handleAddNumber('.')}/>
             <Button label="0" onClick={() => handleAddNumber('0')}/>
-            <Button label="." onClick={() => handleAddNumber('.')}/>
             <Button label="=" onClick={handleEquals}/>
           </Row>
-        
+
         </ContentKeyboard>
       </Content>
     </Container>

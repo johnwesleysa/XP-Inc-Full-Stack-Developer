@@ -4,7 +4,7 @@ export const Container = styled.div `
     width: 100%;
     min-height: 100vh;
     background-color: #E7E7E7;
-    
+    border-radius-15px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -22,6 +22,8 @@ export const Row = styled.div `
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    border-radius-15px;
+
 `
 
 export const Column = styled.div `
@@ -35,9 +37,9 @@ export const ContentKeyboard = styled.div `
     border-top-right-radius: 30px;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 15px;
-    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
     background-color: #292D36;
     width: 100%;
     height: 500px;
     padding-top: 30px;
-`
+`   

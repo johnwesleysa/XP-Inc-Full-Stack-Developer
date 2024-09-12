@@ -1,3 +1,5 @@
+## Para uma melhor visualização do app, habilite o inpecionar e acione o modo mobile com dimensão para iPhone 14 Pro Max
+
 # Calculadora React
 
 Este é um aplicativo de calculadora simples desenvolvido durante o bootcamp Fullstack Developer da XP na Dio. O projeto utiliza React, Styled-Components, HTML, CSS e JavaScript para criar uma aplicação de calculadora funcional e responsiva.
