@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #1D2128;
+    font-family: "Kanit", sans-serif;
+    font-weight: 200;
+}
+
+hr {
+    background-color: rgba(229,229,229, 0.2);
+    border: 1px solid rgba(229,229,229, 0.2)
+}
