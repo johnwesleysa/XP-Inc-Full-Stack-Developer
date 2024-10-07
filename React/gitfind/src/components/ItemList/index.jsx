@@ -1,7 +1,12 @@
 import './styles.css'
 
-function ItemList () {
-    return <div>index</div>
+function ItemList ({title, description, link}) {
+    return <div className="item-list">
+        <a href={link} target='blank'><strong>{title}</strong></a>
+        <p>{description}</p>
+        <hr/>
+        
+    </div>
 }
 
 export default ItemList
