@@ -1,33 +1,53 @@
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import { useForm } from "react-hook-form";
 import Button from "../../components/Button";
 import Header from "../../components/Header";
-import { Input } from "../../components/Header/styles";
+import { Input } from "../../components/Input";
 import { 
     Container,
-    TextContent,Title,
-    TitleHighLight 
+    Column,
+    CriarText,
+    EsqueciText,
+    Row,
+    SubtitleLogin,
+    Title,
+    TitleLogin,
+    Wrapper 
 } from "./styles";
+import { MdEmail, MdPassword } from "react-icons/md";
 
 const Login = () => {
+
+    const navigate = useNavigate();
+
+    const handleClickSignIn = () => {
+        navigate('/feed')
+    }
+
     return(<>
         <Header/>
         <Container>
-            <div>
+            <Column>
                 <Title>
-                    <TitleHighLight>
-                    Implemente
-                    <br/>
-                    </TitleHighLight>
-                    O seu futuro Global agora!
+                    A Plataforma para você aprender com experts, dominar as principais tecnologias e entrar mais rápido nas empresas mais desejadas
                 </Title>
-                <TextContent>
-                    Domine as tecnologias utilizadas pelas empresas mais inovadoraas do mundo e encare seu asasdfasdf desafio profissional, evoluindo em comunidade com os melhores experts.
-                </TextContent>
-                <Button title="Começar agora" variant="secondary" onClick={() => null}/>
-            </div>
-            <div>
-                <Input placeholder="e-mail" />
-            </div>
+            </Column>
+
+            <Column>
+                <Wrapper>
+                    <TitleLogin>Faça seu Cadastro</TitleLogin>
+                    <SubtitleLogin>Faça seu login e make the cange._</SubtitleLogin>
+                    <form>
+                        <Input placeholder="E-mail" leftIcon={<MdEmail/>}/>
+                        <Input placeholder="Senha" type="password" leftIcon={<MdPassword/>}/>
+                        <Button title="Entrar" variant="secondary" onClick={handleClickSignIn}/>
+                    </form>
+                    <Row>
+                        <EsqueciText>Esqueci minha senha</EsqueciText>
+                        <CriarText>Criar Conta</CriarText>
+                    </Row>
+                </Wrapper>
+            </Column>
     
         </Container>
     </>)
