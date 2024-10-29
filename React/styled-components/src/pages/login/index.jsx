@@ -20,6 +20,9 @@ const Login = () => {
 
     const navigate = useNavigate();
 
+    const { control, handleSubmit, formState:{ errors, isValid } } = useForm()
+    const onSubmit = data => console.log(data)
+
     const handleClickSignIn = () => {
         navigate('/feed')
     }
@@ -37,10 +40,10 @@ const Login = () => {
                 <Wrapper>
                     <TitleLogin>Faça seu Cadastro</TitleLogin>
                     <SubtitleLogin>Faça seu login e make the cange._</SubtitleLogin>
-                    <form>
-                        <Input placeholder="E-mail" leftIcon={<MdEmail/>}/>
-                        <Input placeholder="Senha" type="password" leftIcon={<MdPassword/>}/>
-                        <Button title="Entrar" variant="secondary" onClick={handleClickSignIn}/>
+                    <form onSubmit={handleSubmit(onSubmit)}>
+                        <Input name="email" control={control} placeholder="E-mail" leftIcon={<MdEmail/>}/>
+                        <Input  name="password" control={control} placeholder="Senha" type="password" leftIcon={<MdPassword/>}/>
+                        <Button title="Entrar" variant="secondary" type="submited"/>
                     </form>
                     <Row>
                         <EsqueciText>Esqueci minha senha</EsqueciText>
