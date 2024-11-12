@@ -13,7 +13,7 @@ export const Container = styled.main `
 `
 
 export const Wrapper = styled.div`
-    max-width: 300px;
+    max-width: 400px;
 `
 
 export const ErrorText = styled.p`
@@ -30,7 +30,7 @@ export const Column = styled.div`
 export const Row = styled.div `
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     margin-top: 20px;
 `
@@ -74,8 +74,6 @@ export const EsqueciText = styled.p `
     font-size: 14px;
     line-height: 19px;
     color: #e5e044;
-    cursor: pointer;
-
 `
 
 export const CriarText = styled.p `
@@ -85,5 +83,36 @@ export const CriarText = styled.p `
     font-size: 14px;
     line-height: 19px;
     color: #e23dd7;
+`
+
+export const FazerLogin = styled.p `
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    color: #23DD7A;
     cursor: pointer;
+    
+`
+
+export const TenhoConta = styled.p `
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+    cursor: pointer;
+    padding-right: 2%;
+`
+
+export const Article = styled.p `
+    padding-top: 10%;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    margin-bottom: 35px;
 `
